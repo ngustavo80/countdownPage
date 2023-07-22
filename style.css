@@ -35,14 +35,56 @@ div.countdown span {
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+div.time-type {
+  display: flex;
+  justify-content: center;
+}
+
+div.time-type p {
+  color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 91px;
+}
+
+div.time-type p:last-child {
+  margin-right: 0;
 }
 
 div.time {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-div.time div p {
-  display: inline;
+div.time strong {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+div.subscribe p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 45px;
+}
+
+div.subscribe button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+
+  background: var(--purple);
+  color: #FFF;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+div.subscribe button:hover {
+  background: #5a54d6;
 }
