@@ -43,7 +43,7 @@ section.card {
   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
-div.countdown span {
+div.countdown strong {
   display: block;
   color: var(--purple);
   font-size: 36px;
@@ -55,29 +55,35 @@ div.countdown span {
 }
 
 div.time-type {
-  display: flex;
-  justify-content: center;
-}
-
-div.time-type p {
-  color: var(--light-grey);
-  font-size: 14px;
-  font-weight: 300;
-  margin-right: 91px;
-}
-
-div.time-type p:last-child {
-  margin-right: 0;
-}
-
-div.time {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 50px;
 }
 
-div.time strong {
+div.time-type div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.time-type div span {
+  color: var(--light-grey);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+div.time-type div p {
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+div.time-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 70px;
   font-weight: 400;
 }

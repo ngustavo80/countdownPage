@@ -1,5 +1,8 @@
 var launchDay = new Date('Aug 1, 2023 15:00:00').getTime()
-const countDownElement = document.querySelector('#time-left')
+const dayCounterElement = document.querySelector('.day')
+const hourCounterElement = document.querySelector('.hour')
+const minuteCounterElement = document.querySelector('.minute')
+const secondCounterElement = document.querySelector('.second')
 
 var countDown = setInterval(function() {
   var currentDay = new Date().getTime()
@@ -16,7 +19,10 @@ var countDown = setInterval(function() {
   minutes = minutes < 10 ? '0' + minutes : minutes
   seconds = seconds < 10 ? '0' + seconds : seconds
 
-  countDownElement.innerHTML = days + ' : ' + hours + ' : ' + minutes + ' : ' + seconds
+  dayCounterElement.innerHTML = days
+  hourCounterElement.innerHTML = hours
+  minuteCounterElement.innerHTML = minutes
+  secondCounterElement.innerHTML = seconds
 
   if (timeLeftToLaunch < 0) {
     clearInterval(timeLeftToLaunch)
