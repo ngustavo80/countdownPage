@@ -50,8 +50,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: 450px;
-  height: 250px;
+  width: 550px;
+  height: 350px;
 
   border-radius: 16px;
 
@@ -64,7 +64,21 @@ body {
   flex-direction: column;
   align-items: start;
 
+  width: 70%;
+
   margin-bottom: 24px;
+}
+
+.name input,
+.email input {
+  width: 100%;
+
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e4e4e4;
+
+  font-size: 16px;
 }
 
 .active a {
