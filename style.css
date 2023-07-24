@@ -16,103 +16,25 @@ html {
 }
 
 body {
+  height: 100vh;
   background: url(./assets/bottom-image.svg) bottom / 100% no-repeat, 
               url(./assets/top-image.svg) top / 100% no-repeat;
 }
 
-/*-------------MODAL------------------*/
-
-.modal {
-  display: none;
-}
-
-.modal-background {
-  background-color: #00000090;
-  position: absolute;
-  z-index: 777;
-}
-
-.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #0000006b;
-
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 550px;
-  height: 350px;
-
-  border-radius: 16px;
-
-  background-color: #FFF;
-}
-
-.name,
-.email {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-
-  width: 70%;
-
-  margin-bottom: 24px;
-}
-
-.name input,
-.email input {
-  width: 100%;
-
-  padding: 16px;
-  border-radius: 8px;
-  border: none;
-  background: #e4e4e4;
-
-  font-size: 16px;
-}
-
-.active a {
-  position: absolute;
-  right: 3%;
-  top: 3%;
-
-  color: var(--light-grey);
-  font-size: 14px;
-  text-decoration: underline;
-  overflow: hidden;
-
-  cursor: pointer;
-}
-
-/*-------------------------------------------------------------------*/
 
 main {
-  height: 100vh;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
-  
-  gap: 100px;
+  justify-content: space-between;
 
-  margin-top: 16px;
+  height: 100%;
+  margin: 0 100px;
 }
 
 section.card {
   text-align: center;
   background-color: #FFF;
   border-radius: 16px;
-  margin-left: 100px;
   padding: 30px;
 
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
@@ -183,3 +105,83 @@ button.button {
 button.button:hover {
   background: #5a54d6;
 }
+
+
+/*-------------MODAL------------------*/
+
+.modal {
+  display: none;
+}
+
+.modal-background {
+  background-color: #00000090;
+  position: absolute;
+  z-index: 777;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0000006b;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 550px;
+  height: 350px;
+
+  border-radius: 16px;
+
+  background-color: #FFF;
+}
+
+.name,
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 70%;
+
+  margin-bottom: 24px;
+}
+
+.name input,
+.email input {
+  width: 100%;
+
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #e4e4e4;
+
+  font-size: 16px;
+}
+
+.active a {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+
+  color: var(--light-grey);
+  font-size: 14px;
+  text-decoration: underline;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+/*-------------------------------------------------------------------*/

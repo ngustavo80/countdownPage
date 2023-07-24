@@ -3,9 +3,6 @@ const modalBackgroundElement = document.getElementsByTagName('main')
 const openModalElement = document.querySelector('#open-modal')
 const closeModalElement = document.querySelector('.modal > .container a')
 
-
-console.log(closeModalElement)
-
 openModalElement.addEventListener('click', (e) => {
   modalElement.classList.add('active')
 })
