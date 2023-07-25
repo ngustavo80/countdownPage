@@ -25,10 +25,12 @@ body {
 main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: center;
   height: 100%;
-  margin: 0 100px;
+}
+
+section.rocket {
+  margin-left: 100px;
 }
 
 section.card {
@@ -37,8 +39,8 @@ section.card {
   border-radius: 16px;
   padding: 30px;
 
-  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+  margin-right: 100px;
+
   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
@@ -185,3 +187,30 @@ button.button:hover {
 }
 
 /*-------------------------------------------------------------------*/
+
+@media screen and (max-width: 1350px) {
+  .rocket {
+    display: none;
+  }
+
+  .card {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+      box-shadow: none !important;
+  }
+
+  .countdown strong {
+    font-size: 24px !important;
+  }
+
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 56px !important;
+  }
+}
