@@ -3,28 +3,28 @@
 </div>
 
 <div align="center">
-  Página web com um contador de dias, horas, minutos e segundos para lançamento de alguma novidade.
+  Countdown with days, hours, minutes and seconds for a new launch!
 </div>
 
 
-## Tecnologias utilizadas
+## Technologies
 
 - HTML
 - CSS
 - JavaScript
 - Figma
 
-## Projeto
+## Project
 
-Você pode baixar o projeto em formato ZIP.
+You can download the project in ZIP or clone via terminal.
 
-### Clonar Projeto
+### Clone project
 
 ```bash
   git clone https://github.com/ngustavo80/countdownPage.git
 ```
 
-## Imagens
+## Images
 
 <div align="center">
   <img src="./.github/countdownPage.png" />
