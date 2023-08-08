@@ -1,4 +1,4 @@
-var launchDay = new Date('Aug 1, 2023 15:00:00').getTime()
+var launchDay = new Date('Aug 30, 2023 15:00:00').getTime()
 
 console.log(launchDay)
 
@@ -25,4 +25,6 @@ setInterval(function() {
   if (timeLeftToLaunch < 0) {
     clearInterval(timeLeftToLaunch)
   }
+
+  
 }, 1000)
